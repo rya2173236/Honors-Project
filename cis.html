@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Honors Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        div.item > a:hover {
+            color: blue;
+        }
+        .rWall {
+            padding-top: 2%;
+            padding-right: 2%;
+        }
+        .pBom{
+            padding-bottom: 2%;;
+        }
+        p{
+            padding-top: 2%;
+            font-size: 1.4em;
+        }
+        .text{
+            font-size: 1.5em;
+            line-height: 200%;
+        }
+        .pRight{
+            padding-left: 35%;
+            padding-right: 10%;
+        }
+        .lWall{
+            padding-top: 2%;
+            padding-left: 2%;
+        }
+        p.code{
+            background-color: rgba(145, 145, 145, 0.5);
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav navbar">
+            <li class="navPad nav-item"><a class="navlink" href="index.html">Home</a></li>
+            <li class="navPad nav-item"><a class="navlink" href="cis.html">Coding Technologies</a></li>
+            <li class="navPad nav-item"><a class="navlink" href="cited.docx">Work Cited</a></li>
+        </div>
+    </div>
+    <h1 class="display-4" align="center">Coding The World</h1>
+    <hr class="my-4" color="blue" width="85%">
+    <div class="container">
+        <div class="row" align="center">
+        <div class="col-md-3 item">
+            <a href="https://www.w3schools.com/whatis/">
+                Web Developer
+            </a>
+                <hr class="col-sm" color="blue">
+            </div>
+            <div class="col-md-3 item">
+            <a href="https://www.guru99.com/software-development-life-cycle-tutorial.html">
+                Software Developer
+            </a>
+                <hr class="col-sm" color="blue">
+            </div>
+            <div class="col-md-3 item">
+            <a href="https://towardsdatascience.com/life-cycle-of-a-data-science-project-3962b9670e5b">
+                Data Scientist
+            </a>
+                <hr class="col-sm" color="blue">
+            </div>
+            <div class="col-md-3 item">
+            <a href="https://www.shsu.edu/~csc_tjm/summer2000/cs334/chapter06/chapter6.html">
+                Database Developer
+            </a>
+                <hr class="col-sm" color="blue">
+            </div>
+        </div>
+    </div>
+    <div class="display-4 pBom" align="center"><a href="https://expressjs.com" target="_blank">Express.Js</a></div>
+    <div class="row">
+    <p class="col-md-4 lWall text">Express.js is a Node.js framework (Pre-built Node.js file) used to make a connection to a server. It's main purpose is to help handle numerious different http requests at once. Using different methods to send or post information, and to retrieve or get. Using express is helpful for smaller scale projects to test without hurting a server or risking data. Being able to handle numerious http requests, express works well with API's (Aplication Protocol Internface). By just being able to handle so many request for information and authentification.</p>
+    <p class="col-md-4 lWall code">
+    <code align="center">
+        var express = require('express');<br/>
+        var app = express();<br/>
+        <br/>
+        app.set('view engine', 'ejs');<br/>
+        <br/>
+        // index page<br/>
+        app.get('/', function(req, res){<br/>
+            res.render('pages/index');<br/>
+        });<br/>
+        <br/>
+        // cis page<br/>
+        app.get('/cis', function(req, res){<br/>
+            res.render('pages/cis');<br/>
+        });<br/>
+        <br/>
+        app.listen(8080);
+    </code>
+    </p>
+    <p class="col-md-4 rWall text">In this example I am using express to create a local server. By first using the require method, the express frame work gets brought in and stored into a variable named "app". In this project instead of having an HTML, an EJS(Embeded JavaScript) file is the index asigned as the view engine. EJS is an html file that can render express JavaScript within the page. The reason for using this file extension it to allow express to switch between files with little to no package loss. The app.get method is how this is possible by retrieveing from the project folder.</p>
+</div>
+<br/>
+<hr color="black" width="100%">
+    <div class="display-4 pBom" align="center"><a href="https://getbootstrap.com" target="_blank">Bootstrap</a></div>
+    <div class="row">
+        <p class="col-md-4 lWall text">Bootstrap is a CSS(cascading style sheet) framework that is used to help create more clean and efficient code. The main use of hte framework is used to help add stylish properties onto elements. A key feature is the positioning layout, and using less code to make more happen. Helps to creates grids,and basic styling such as in Microsoft applications.</p>
+        <p class="col-md-4 lWall code">
+            <code align="center">
+                display-(1-4)
+                <br/>
+                <br/>
+                navbar/nav/nav-item
+                <br/>
+                <br/>
+                col-md-(3/4/6/12)
+                <br/>
+                <br/>
+                text-right/left/center
+            </code>
+        </p>
+        <p class="col-md-4 rWall text">For this project I had used all of these items. Originally I was planning to just hard code all of it myself but after reasearching and finding this I gave it a shot. After a fair amount of practice, I found it far more efficient and used as much as I could. Each of this is added as a class to an element and only effect their appearance properties.</p>
+        <br/>
+        <hr color="black" width="100%">
+        <p style="margin-left: auto; margin-right: auto;">*This project was done by Ryan Powell of Estrella Mountain Community College. All right are reserved*</p>
+        <br>
+    </div>
+</body>
+</html>
